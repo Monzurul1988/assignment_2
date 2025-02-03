@@ -122,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               ),
                   onPressed: _addContact,
-                  child: const Text( 'Add',style: TextStyle(fontSize: 25, color: Colors.blue)),
+                  child: const Text( 'Add',style: TextStyle(fontSize: 25, color: Colors.green)),
                 ),
 
             const SizedBox(height: 20,),
