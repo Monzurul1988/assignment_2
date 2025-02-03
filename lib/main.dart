@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(git
+      theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
@@ -83,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue.shade300,
-        title: const Center(child: Text('Contacts List')),
+        title: const Center(child: Text('Contacts List', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -134,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: ListTile(
                       leading: const Icon(Icons.person, color: Colors.grey, size: 50),
                       trailing: const Icon(Icons.phone, color: Colors.blue,),
-                      title: Text(contacts[index]['name']!, style: TextStyle(color: Colors.red.shade400,fontSize: 20),),
+                      title: Text(contacts[index]['name']!, style: TextStyle(color: Colors.pinkAccent.shade200,fontSize: 20),),
                       subtitle: Text(contacts[index]['phone']!),
                       onLongPress: () {
                         _showDeleteDialog(index);
